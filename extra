@@ -1,3 +1,17 @@
+https://code.visualstudio.com/ (Install)
+https://nodejs.org/en/ (Install)
+https://git-scm.com/downloads (install)
+https://github.com/ (SignUp)
+https://github.com/Aakashdeveloper (Follow)
+
+//extensions for VS code
+> vscode-icons
+> spell check
+> githistory
+> gitlens
+> TabNine
+
+
 NPM
 Basic NodeJS(in built)(Os,file,http)
 NodeJS(full Stack App) (Node-EJs-Mongo-Express)
@@ -36,3 +50,17 @@ Html/css/jquery
 
 microservice(aws lambda)
 upload to s3 bucket
+
+
+////////NodeJs///////
+Single Threaded non blocking async I/O
+
+Event loop base structure
+
+///////////////
+NPM > Node Package Manager
+(Registry)
+
+
+NodeJS @ 8:00 AM (IST) by Mr.Aakash
+Day-1 https://youtu.be/pqErRF-HOX4
