@@ -61,6 +61,71 @@ Event loop base structure
 NPM > Node Package Manager
 (Registry)
 
+2,165,533
+---------
+986
+---------
+
+object {}
+array []
+
+JSON(Javascript object notation)
+(Way to represent data)
+(Key Value pair)
+
+[
+    {
+        "name":"John",
+        "city":"Amsterdam"
+    },
+    {
+        "name":"Ankit",
+        "city":"Paris"
+    },
+    {
+        "name":"Nikita",
+        "city":"London",
+        "age":20
+    }
+]
+
+//////////////////
+Package.json 
+> Entry point to the app
+> Command to start test build the application
+> All the packages we are using
+> MetaData (name,version,description)
+
+////////////////////////////////
+Step to generate packages.json
+------------------------------
+* Nodejs Must be installed in your system
+> open the cmd and go inside the folder
+> npm init
+> Answer all questions
+> type "yes"
+
+Step to install Local `packages
+------------------------------
+* Nodejs Must be installed in your system
+> open the cmd and go inside the folder
+> npm i packagesName  / npm install packagesName
+
+//// Type of Dependency ////
+Local Dependency
+Global Dependency
+Dev Dependency
+
+
+package-lock.json >> dependencies tree
+node_modules> where all packages install locally
+.gitignore > help to ignore while pushing
+readme.md > Details decription of application
+
+
+
+
 
 NodeJS @ 8:00 AM (IST) by Mr.Aakash
 Day-1 https://youtu.be/pqErRF-HOX4
+Day-2 https://youtu.be/5f6wNiQSwMM
