@@ -13,6 +13,7 @@ https://github.com/Aakashdeveloper (Follow)
 
 
 NPM
+//////////////////
 Basic NodeJS(in built)(Os,file,http)
 NodeJS(full Stack App) (Node-EJs-Mongo-Express)
 Third Party Api (Weather Api)
@@ -112,9 +113,14 @@ Step to install Local `packages
 > npm i packagesName  / npm install packagesName
 
 //// Type of Dependency ////
-Local Dependency
+Local Dependency 
+> By default packages installed is called as local dependencies
+
 Global Dependency
+
 Dev Dependency
+> Dependency that we require only at the time of development
+npm i --save-dev packageName
 
 
 package-lock.json >> dependencies tree
@@ -124,11 +130,10 @@ readme.md > Details decription of application
 
 
 
-
-
 NodeJS @ 8:00 AM (IST) by Mr.Aakash
 Day-1 https://youtu.be/pqErRF-HOX4
 Day-2 https://youtu.be/5f6wNiQSwMM
+Day-3 https://youtu.be/Ezf6iU93WlQ
 
 
 BANK A/C DETAILS:
