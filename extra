@@ -134,6 +134,7 @@ NodeJS @ 8:00 AM (IST) by Mr.Aakash
 Day-1 https://youtu.be/pqErRF-HOX4
 Day-2 https://youtu.be/5f6wNiQSwMM
 Day-3 https://youtu.be/Ezf6iU93WlQ
+Day-4 https://youtu.be/n_LTYRSRtwg
 
 
 BANK A/C DETAILS:
@@ -157,3 +158,22 @@ Last Name: I Technologies
 Purpose: Education                        
 Address: Ameerpet, Hyderabad, Telangana, India                        
 Mobile No.: +91-8179191999.
+
+
+//es5> Ecma script5
+function add(a,b){
+    return a+b
+}
+//es6> Ecma script6
+let add = (a,b) => {return a+b}
+
+//No Err tracking
+append
+write
+
+// default err tracking
+readFile
+
+// manual err tracking
+unlink
+rename
