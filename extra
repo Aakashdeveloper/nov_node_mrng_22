@@ -13,8 +13,8 @@ https://github.com/Aakashdeveloper (Follow)
 
 
 NPM
-//////////////////
 Basic NodeJS(in built)(Os,file,http)
+//////////////////
 NodeJS(full Stack App) (Node-EJs-Mongo-Express)
 Third Party Api (Weather Api)
 Redis  > 6379
@@ -117,6 +117,11 @@ Local Dependency
 > By default packages installed is called as local dependencies
 
 Global Dependency
+> Can be used by any application
+> It installed in the laptop
+> need admin permission 
+> they will not add in packages.json
+> Only use to start the app
 
 Dev Dependency
 > Dependency that we require only at the time of development
@@ -135,6 +140,7 @@ Day-1 https://youtu.be/pqErRF-HOX4
 Day-2 https://youtu.be/5f6wNiQSwMM
 Day-3 https://youtu.be/Ezf6iU93WlQ
 Day-4 https://youtu.be/n_LTYRSRtwg
+Day-5 https://youtu.be/fHwylduy4oc
 
 
 BANK A/C DETAILS:
@@ -177,3 +183,10 @@ readFile
 // manual err tracking
 unlink
 rename
+
+/////////
+nodemon
+
+//////Step to install global package 
+> open the cmd as adminstrator
+> npm i -g nodemon
