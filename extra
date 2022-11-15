@@ -105,6 +105,8 @@ Step to generate packages.json
 > npm init
 > Answer all questions
 > type "yes"
+******Alternate*****
+> npm init -y
 
 Step to install Local `packages
 ------------------------------
@@ -190,3 +192,8 @@ nodemon
 //////Step to install global package 
 > open the cmd as adminstrator
 > npm i -g nodemon
+
+
+function add(a,b){
+    return a+b
+}
