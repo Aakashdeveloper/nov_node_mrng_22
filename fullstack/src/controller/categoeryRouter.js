@@ -24,10 +24,17 @@ var categoryData = [
     }
 ]
 
+var routes = [
+    {name:'Category',link:'/category'},
+    {name:'Products',link:'/products'}
+]
+
+
 //default route of category
 categoryRouter.route('/')
     .get((req,res) => {
-        res.send(categoryData)
+        //res.send(categoryData)
+        res.render('category',{title:'Categories',catData:categoryData,routes})
     })
 
 //detail route of category
@@ -35,3 +42,5 @@ categoryRouter.route('/details')
     .get((req,res) => {
         res.send('Category Details')
     })
+
+module.exports = categoryRouter

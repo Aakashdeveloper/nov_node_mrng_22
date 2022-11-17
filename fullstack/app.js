@@ -1,8 +1,15 @@
 let express = require('express');
 let app = express();
 let port = 7600;
-let categoryRouter = express.Router();
-let productRouter = express.Router();
+let categoryRouter = require('./src/controller/categoeryRouter')
+let productRouter = require('./src/controller/productRouter');
+
+//static file path
+app.use(express.static(__dirname+'/public'));
+//html file path
+app.set('views','./src/views')
+// view engine name
+app.set('view engine', 'ejs')
 
 // default
 app.get('/',(req,res)=>{

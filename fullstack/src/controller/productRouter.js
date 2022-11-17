@@ -1,7 +1,7 @@
 let express = require('express');
 let productRouter = express.Router();
 
-var products = [
+var proddata = [
     {
         "id": 1,
         "product_name": "Girls top",
@@ -515,10 +515,15 @@ var products = [
     }
 ]
 
+var routes = [
+    {name:'Category',link:'/category'},
+    {name:'Products',link:'/products'}
+]
+
 // default products
 productRouter.route('/')
     .get((req,res) => {
-        res.send(products)
+        res.render('product',{title:'Products',proddata,routes})
     })
 
 //detail route of products
@@ -526,3 +531,5 @@ productRouter.route('/details')
     .get((req,res) => {
         res.send('Products Details')
     })
+
+module.exports = productRouter
