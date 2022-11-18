@@ -515,21 +515,22 @@ var proddata = [
     }
 ]
 
-var routes = [
-    {name:'Category',link:'/category'},
-    {name:'Products',link:'/products'}
-]
+function router(menu){
 
-// default products
-productRouter.route('/')
-    .get((req,res) => {
-        res.render('product',{title:'Products',proddata,routes})
-    })
+    // default products
+    productRouter.route('/')
+        .get((req,res) => {
+            res.render('product',{title:'Products',proddata,menu})
+        })
 
-//detail route of products
-productRouter.route('/details')
-    .get((req,res) => {
-        res.send('Products Details')
-    })
+    //detail route of products
+    productRouter.route('/details')
+        .get((req,res) => {
+            res.send('Products Details')
+        })
 
-module.exports = productRouter
+    return productRouter
+
+}
+
+module.exports = router

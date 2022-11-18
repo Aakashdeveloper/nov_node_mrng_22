@@ -1,8 +1,21 @@
 let express = require('express');
 let app = express();
-let port = 7600;
-let categoryRouter = require('./src/controller/categoeryRouter')
-let productRouter = require('./src/controller/productRouter');
+let dotenv = require('dotenv');
+dotenv.config();
+let port = process.env.PORT || 7600;
+let morgan = require('morgan');
+let fs = require('fs');
+
+//middleware
+app.use(morgan('dev',{stream:fs.createWriteStream('./app.log')}))
+
+var menu = [
+    {name:'Category',link:'/category'},
+    {name:'Products',link:'/products'}
+]
+
+let categoryRouter = require('./src/controller/categoeryRouter')(menu)
+let productRouter = require('./src/controller/productRouter')(menu)
 
 //static file path
 app.use(express.static(__dirname+'/public'));

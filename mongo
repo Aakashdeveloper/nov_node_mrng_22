@@ -1,0 +1,8 @@
+////How to setup mongodb
+
+* Create folder by the name of data
+C:/program Files/data
+
+
+* Create folder by the name of db inside data
+C:/program Files/data/db
