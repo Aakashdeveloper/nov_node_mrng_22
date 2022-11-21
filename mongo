@@ -6,3 +6,86 @@ C:/program Files/data
 
 * Create folder by the name of db inside data
 C:/program Files/data/db
+
+////////////////////////////////////////
+No Sql and can save unstructred data
+
+RollNo | Hindi  | English | Computer
+   1   |  85    |         |
+   2   |        |  78     |
+   3   |  79    |         |
+   4   |  86    |         |    79
+
+
+[
+    {
+        rollNo:1,
+        hindi:85
+    },
+    {
+        rollNo:2,
+        English:78
+    },
+    {
+        rollNo:3,
+        hindi:79
+    } ,
+    {
+        rollNo:4,
+        hindi:86,
+        computer:79
+    }
+]
+
+////////////////////////////////////////////////////////////////
+Sql         NoSql
+Database    Database
+Table       Collection
+Row         Document
+Select      find
+Insert      Insert
+Update      Update
+Delete      Remove
+
+------------------------------------------------
+Default Port> 27017
+
+
+//////Step to start mongodb/////
+> open cmd and go inside the folder
+> c:/programm file/mongodb/server/5.3/bin
+> mongod
+* do not close cmd
+
+> open new cmd and go inside the folder
+> c:/programm file/mongodb/server/5.3/bin
+> mongo
+
+
+////////////
+* To See All databases
+> Show dbs
+
+* To go inside databases
+> use dbname
+
+* To see collections
+> show collections
+
+* To see data inside collections (find query)
+> db.collectionsName.find()
+
+> db.collectionsName.find().pretty()
+
+_id > primary key (always unique)
+12byte
+timestamp
+series
+random number
+
+////insert data
+
+db.users.insert({name:'Nikita'})
+
+db.users.insert({_id:1,name:'Arun'})
+db.users.insert({_id:2,name:'karan'})
