@@ -72,6 +72,10 @@ Default Port> 27017
 * To see collections
 > show collections
 
+* To create new databases
+> use dbname
+
+
 * To see data inside collections (find query)
 > db.collectionsName.find()
 
@@ -89,3 +93,17 @@ db.users.insert({name:'Nikita'})
 
 db.users.insert({_id:1,name:'Arun'})
 db.users.insert({_id:2,name:'karan'})
+
+
+db.users.insert([
+    {_id:1,name:'Arun'},
+    {_id:2,name:'karan'},
+    {_id:2,name:'karan'}
+])
+
+
+* To find data on basis of condition
+db.products.find({category_id:2})
+
+
+db.products.find({product_name:"Washing Machine",Color:"White"})

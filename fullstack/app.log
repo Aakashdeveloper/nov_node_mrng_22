@@ -1,0 +1,10 @@
+[0mGET /products [36m304[0m 174.209 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304[0m 6.924 ms - -[0m
+[0mGET /css/styles.css [36m304[0m 5.202 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304[0m 2.010 ms - -[0m
+[0mGET /fonts/glyphicons-halflings-regular.woff [33m404[0m 4.600 ms - 178[0m
+[0mGET /fonts/glyphicons-halflings-regular.ttf [33m404[0m 6.563 ms - 177[0m
+[0mGET /products/category/1 [32m200[0m 3.040 ms - 1[0m
+[0mGET /products/category/4 [32m200[0m 1.507 ms - 1[0m
+[0mGET /products/category/89 [32m200[0m 1.030 ms - 2[0m
+[0mGET /products/category/ [33m404[0m 2.782 ms - 157[0m
