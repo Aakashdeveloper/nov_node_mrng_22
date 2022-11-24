@@ -15,8 +15,9 @@ https://www.mongodb.com/try/download/community (Install)
 
 NPM
 Basic NodeJS(in built)(Os,file,http)
-//////////////////
 NodeJS(full Stack App) (Node-EJs-Mongo-Express)
+//////////////////
+
 Third Party Api (Weather Api)
 Redis  > 6379
 ImageUpload
