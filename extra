@@ -16,15 +16,15 @@ https://www.mongodb.com/try/download/community (Install)
 NPM
 Basic NodeJS(in built)(Os,file,http)
 NodeJS(full Stack App) (Node-EJs-Mongo-Express)
-//////////////////
-
 Third Party Api (Weather Api)
+//////////////////
 Redis  > 6379
 ImageUpload
 ImageUpload(formidable)
 RedisWithMongo
 Node-Es6(.babel)
 MongoDb Basic >27017  (local/cloud)
+
 Zomato App backend
 Api with NodeJS(Rest)>1
 Swagger
@@ -217,3 +217,18 @@ QueryParams
 > No Need to define in the url
 > Not compliousry to pass
 > Use for passing multiple values
+
+
+//////
+var a = 10
+a > 10 ?"hii":"Bie"
+
+////////String Literal/////
+var a = 10
+var b = "my age is "+a
+"my age is 10"
+
+///es6
+var a = 10
+var b = `my age is ${a}`
+"my age is 10"
