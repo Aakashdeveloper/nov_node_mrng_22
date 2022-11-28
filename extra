@@ -17,8 +17,8 @@ NPM
 Basic NodeJS(in built)(Os,file,http)
 NodeJS(full Stack App) (Node-EJs-Mongo-Express)
 Third Party Api (Weather Api)
-//////////////////
 Redis  > 6379
+//////////////////
 ImageUpload
 ImageUpload(formidable)
 RedisWithMongo
@@ -232,3 +232,17 @@ var b = "my age is "+a
 var a = 10
 var b = `my age is ${a}`
 "my age is 10"
+
+download Redis > https://redis.io/download/
+npm i redis@3.1.0
+
+/////////////////////
+KEYS *
+set marks 267
+get marks
+del marks
+FlushAll
+set maeks 234 ex 3000
+
+
+function add(){}
