@@ -1,5 +1,5 @@
-let express = require('express');
-let request = require('request');
+import express from 'express';
+import request from 'request';
 let app = express();
 let port = process.env.PORT || 8780;
 
@@ -27,3 +27,5 @@ app.listen(port,(err) => {
 
 // let country = req.query.country;
 // console.log(`${city}-${country}`)
+// let express = require('express');
+// let request = require('request');

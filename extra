@@ -19,10 +19,10 @@ NodeJS(full Stack App) (Node-EJs-Mongo-Express)
 Third Party Api (Weather Api)
 Redis  > 6379
 ImageUpload
-//////////////////
 ImageUpload(formidable)
 RedisWithMongo
 Node-Es6(.babel)
+//////////////////
 MongoDb Basic >27017  (local/cloud)
 
 Zomato App backend
@@ -196,6 +196,9 @@ nodemon
 > open the cmd as adminstrator
 > npm i -g nodemon
 
+//////
+sudo npm i -g nodemon
+
 
 function add(a,b){
     return a+b
@@ -246,3 +249,20 @@ set maeks 234 ex 3000
 
 
 function add(){}
+
+//global
+npm i -g @aakashdeveloper/create-node
+
+
+////es5
+function add(a,b){
+    return a+b
+}
+
+add(1,2)
+3
+
+//es6
+let add = (a,b) => {return a+b}
+add(1,2)
+3
