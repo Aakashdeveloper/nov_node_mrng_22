@@ -107,3 +107,13 @@ db.products.find({category_id:2})
 
 
 db.products.find({product_name:"Washing Machine",Color:"White"})
+
+//////
+Create clutser
+create database
+Add network Access
+Add Database Access
+
+
+mongodb+srv://<username>:<password>@cluster0.f8vmc.mongodb.net/?retryWrites=true&w=majority
+mongodb+srv://test:test123@cluster0.f8vmc.mongodb.net/?retryWrites=true&w=majority
