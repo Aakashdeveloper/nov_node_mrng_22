@@ -8,7 +8,7 @@ function router(menu){
     categoryRouter.route('/')
         .get((req,res) => {
             //res.send(categoryData)
-            mongodb.connect(url,function(err,dc){
+            mongodb.connect(url,{useNewUrlParser: true },function(err,dc){
                 if(err){
                     res.status(500).send('Error While Connecting')
                 }else{

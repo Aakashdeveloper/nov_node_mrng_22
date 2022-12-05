@@ -5,13 +5,12 @@ const mongodb = mongo.MongoClient;
 const url = process.env.MongoUrl;
 
 
-
 function router(menu){
 
     // default products
     productRouter.route('/')
         .get((req,res) => {
-            mongodb.connect(url,function(err,dc){
+            mongodb.connect(url,{useNewUrlParser: true },function(err,dc){
                 if(err){
                     res.status(500).send('Error While Connecting')
                 }else{
@@ -51,7 +50,7 @@ function router(menu){
     productRouter.route('/details/:id')
         .get((req,res) => {
             let id = mongo.ObjectId(req.params.id)
-            mongodb.connect(url,function(err,dc){
+            mongodb.connect(url,{ useNewUrlParser: true },function(err,dc){
                 if(err){
                     res.status(500).send('Error While Connecting')
                 }else{

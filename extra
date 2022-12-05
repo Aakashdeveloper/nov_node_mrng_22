@@ -266,3 +266,12 @@ add(1,2)
 let add = (a,b) => {return a+b}
 add(1,2)
 3
+
+
+
+C > Create  (POST)
+R > Read    (GET)
+U > Update  (PUT/PATCH)
+D > Delete  (DELETE)
+
+////
