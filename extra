@@ -22,14 +22,14 @@ ImageUpload
 ImageUpload(formidable)
 RedisWithMongo
 Node-Es6(.babel)
-//////////////////
 MongoDb Basic >27017  (local/cloud) (https://www.mongodb.com/home)
-
+//////////////////
 Zomato App backend
 Api with NodeJS(Rest)>1
 Swagger
 Testing
 DashBoard(Crud)
+
 Github
 --Deployment of app---
 Heroku
