@@ -20,12 +20,20 @@
 > http://localhost:2400/filter/3?cuisineId=1
 
 * Filter on the basis of meal type + high cost + low cost
+> http://localhost:2400/filter/1?hcost=600&lcost=300
 
 * Sort on baise price where mealType exist
+> http://localhost:2400/filter/4?sort=-1
+
+* Pagination
+> http://localhost:2400/filter/1?skip=9&limit=3
 
 ///page 3
 * Details of the restaurant
+> http://localhost:2400/details/12
+
 * Menu wrt to restaurant
+> http://localhost:2400/menu/7
 
 ///page4
 * Place Order
