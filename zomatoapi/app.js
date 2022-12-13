@@ -135,6 +135,70 @@ app.get('/menu/:id',(req,res) => {
     })
 })
 
+// get all Orders
+app.get('/orders',(req,res) => {
+    let query = {};
+    let email = req.query.email;
+    if(email){
+        query = {email:req.query.email}
+    }
+    db.collection('orders').find(query).toArray((err,data) => {
+        if(err) throw err
+        res.status(200).send(data)
+    })
+})
+
+//place orders
+app.post('/placeOrder',(req,res) => {
+    let data = req.body;
+    db.collection('orders').insert(data,(err) => {
+        if(err) throw err;
+        res.send('Order Placed')
+    })
+})
+
+//menu wrt to ids{"id":[4,13,20]}
+app.post('/menuItem',(req,res) => {
+    if(Array.isArray(req.body.id)){
+        db.collection('menu').find({menu_id:{$in:req.body.id}}).toArray((err,data) => {
+            if(err) throw err;
+            res.send(data)
+        })
+    }else{
+        res.send('Please pass the array')
+    }
+})
+
+//updateorder
+app.put('/updateOrder',(req,res) => {
+    db.collection('orders').updateOne(
+        {_id:mongo.ObjectId(req.body._id)},
+        {
+            $set:{
+                "status":req.body.status
+            }
+        },(err,result) => {
+            if(err) throw err;
+            res.send('Order Status Updated')
+        }
+    )
+})
+
+//delete order
+app.delete('/removeOrder',(req,res) => {
+    let id = mongo.ObjectId(req.body._id);
+    db.collection('orders').find({_id:id}).toArray((err,result) => {
+        if(result.length !== 0){
+            db.collection('orders').deleteOne({_id:id},(err,data) => {
+                if(err) throw err;
+                res.send('Order Deleted')
+            })
+        }else{
+            res.send('No Order Found')
+        }
+    })
+   
+})
 
 // db connection
 MongoClient.connect(mongoUrl,(err,client) => {

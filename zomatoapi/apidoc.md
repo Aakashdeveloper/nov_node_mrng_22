@@ -37,9 +37,37 @@
 
 ///page4
 * Place Order
+> (POST) http://localhost:2400/placeOrder
+{
+	"orderId" : 2,
+	"name" : "Vaishali",
+	"email" : "vaishali@gmail.com",
+	"address" : "Hom 65",
+	"phone" : 8934645457,
+	"cost" : 981,
+	"menuItem" : [
+		89,34,23
+	]
+}
+
 * Details of Selected menu
+> (POST) http://localhost:2400/menuItem
+{"id":[5,8,9]}
+
 
 //page 5
 * View all orders / View all orders wrt to email
+> http://localhost:2400/orders
+> localhost:2400/orders?email=vaishali@gmail.com
+
 * Udpate order details
+> (PUT) http://localhost:2400/updateOrder
+body
+{
+	"_id":"6397ec824e2e0c881582257b",
+	"status":"Delivered"
+}
+
 * Delete order
+> (Delete) http://localhost:2400/removeOrder
+{"_id":"6397ec31fb185edea81d32cf"}
