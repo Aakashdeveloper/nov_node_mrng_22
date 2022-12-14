@@ -23,8 +23,8 @@ ImageUpload(formidable)
 RedisWithMongo
 Node-Es6(.babel)
 MongoDb Basic >27017  (local/cloud) (https://www.mongodb.com/home)
-//////////////////
 Zomato App backend
+//////////////////
 Api with NodeJS(Rest)>1
 Swagger
 Testing
@@ -276,3 +276,5 @@ U > Update  (PUT/PATCH)
 D > Delete  (DELETE)
 
 ////
+npm i body-parser cors ejs express mongodb swagger-jsdoc swagger-ui-express
+npm i chai chai-http mocha --save-dev
