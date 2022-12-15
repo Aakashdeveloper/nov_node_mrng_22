@@ -8,6 +8,13 @@ const cors = require('cors');
 const mongoUrl = "mongodb://localhost:27017";
 let db;
 let col_name = "dashboard";
+let swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger.json');
+let package = require('./package.json');
+
+swaggerDocument.info.version = package.version;
+app.use('/api-doc',swaggerUi.serve,swaggerUi.setup(swaggerDocument));
+
 
 app.use(bodyParser.urlencoded({ extended:true}));
 app.use(bodyParser.json());
@@ -77,6 +84,47 @@ app.put('/updateUser',(req,res) => {
         },(err,result) => {
             if(err) throw err;
             res.send('Data Updated')
+        }
+    )
+})
+
+// hard delete
+app.delete('/deleteUser',(req,res) =>{
+    db.collection(col_name).remove(
+        {_id:mongo.ObjectId(req.body._id)},(err,result) => {
+            if(err) throw err;
+            res.send('User Deleted')
+        }
+    )
+})
+
+//soft delete(deactivate)
+app.put('/deactivateUser',(req,res) => {
+    db.collection(col_name).updateOne(
+        {_id:mongo.ObjectId(req.body._id)},
+        {
+            $set:{
+                isActive:false
+            }
+        },(err,result) => {
+            if(err) throw err;
+            res.send('User Deactivated')
+        }
+    )
+})
+
+
+//Activate
+app.put('/activateUser',(req,res) => {
+    db.collection(col_name).updateOne(
+        {_id:mongo.ObjectId(req.body._id)},
+        {
+            $set:{
+                isActive:true
+            }
+        },(err,result) => {
+            if(err) throw err;
+            res.send('User Activated')
         }
     )
 })
