@@ -26,11 +26,10 @@ MongoDb Basic >27017  (local/cloud) (https://www.mongodb.com/home)
 Zomato App backend
 Api with NodeJS(Rest)>1
 Swagger
-//////////////////
 Testing
 DashBoard(Crud)
-
 Github
+//////////////////
 --Deployment of app---
 Render.com
 Pm2
@@ -40,10 +39,11 @@ Jenkins
 
 Login/Logout(JWT)
 Oauth(with github)
+Oauth(with google)
+
 TelegramChat
 GraphQl API
 Paytm-Payment
-Oauth(with google)
 NodeJs with postgres
 Email With Node(nodemailer)
 Chatapp

@@ -117,6 +117,69 @@
                      }
                  }
             }
+        },
+        "/updateUser":{
+            "summary":"Update User",
+            "put":{
+                "description":"Update User",
+                "tags":["PUBLIC ROUTE"],
+                "requestBody":{
+                    "required":true,
+                    "content":{
+                        "application/json":{
+                            "schema":{
+                                "type":"object",
+                                "id":"string"
+                            },
+                            "example":{
+                                "_id":"",
+                                "name":"Lavish",
+                                "city":"Venice",
+                                "phone":3534664646,
+                                "role":"User",
+                                "isActive":true
+                            }
+                        }
+                    }
+                },
+                "responses":{
+                     "200":{
+                         "description":"Health Check pass"
+                     },
+                     "400":{
+                         "description":"Health Check fail"
+                     }
+                 }
+            }
+        },
+        "/deleteUser":{
+            "summary":"Delete User",
+            "delete":{
+                "description":"Delete User",
+                "tags":["PUBLIC ROUTE"],
+                "requestBody":{
+                    "required":true,
+                    "content":{
+                        "application/json":{
+                            "schema":{
+                                "type":"object",
+                                "id":"string"
+                            },
+                            "example":{
+                                "_id":""
+                            }
+                        }
+                    }
+                },
+                "responses":{
+                     "200":{
+                         "description":"Health Check pass"
+                     },
+                     "400":{
+                         "description":"Health Check fail"
+                     }
+                 }
+            }
         }
        
    }

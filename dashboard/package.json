@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node apiwithoutui.js"
+    "start": "node apiwithoutui.js",
+    "ui":"node apiwithui.js",
+    "test": "mocha --timeout 10000"
   },
   "keywords": [],
   "author": "",

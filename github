@@ -1,0 +1,11 @@
+// first time from new folder
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/testcode.git
+git push -u origin master
+
+///Next time from the same folder
+git add .
+git commit -m "first commit"
+git push
