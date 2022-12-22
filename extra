@@ -29,11 +29,11 @@ Swagger
 Testing
 DashBoard(Crud)
 Github
-//////////////////
 --Deployment of app---
 Render.com
 Pm2
 Docker
+//////////////////
 Nginx
 Jenkins
 
@@ -278,3 +278,14 @@ D > Delete  (DELETE)
 ////
 npm i body-parser cors ejs express mongodb swagger-jsdoc swagger-ui-express
 npm i chai chai-http mocha --save-dev
+
+
+pm2
+> npm i -g pm2
+
+pm2 start filename
+pm2 status
+pm2 stop filename
+
+docker build . -t imagename
+docker run -p 9700:1700 imagename
