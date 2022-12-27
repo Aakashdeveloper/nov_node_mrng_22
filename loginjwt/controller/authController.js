@@ -48,6 +48,21 @@ router.post('/login',(req,res) => {
     })
 })
 
+//userinfo
+router.get('/userInfo',(req,res) => {
+    let token = req.headers['x-access-token'];
+    if(!token) res.send({auth:false,token:'No Token Provided'})
+    // jwt verify
+    jwt.verify(token,config.secret,(err,user) => {
+        if(err) res.send({auth:false,token:'Invalid Token'})
+        User.findById(user.id,(err,result)=>{
+            res.send(result)
+        })
+    })
+
+})
 
 
 module.exports = router
+
+//
