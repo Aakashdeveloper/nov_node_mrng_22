@@ -37,22 +37,19 @@ Nginx
 Jenkins
 Login/Logout(JWT)
 Oauth(with github)
-//////////////////
 Oauth(with google)
 Paytm-Payment
 Email With Node(nodemailer)
-
 TelegramChat
+Chatapp
+//////////////////
 GraphQl API
 NodeJs with postgres
-Chatapp
 FIREBASE
 --------NOT---------
 React/Angular
 Html/css/jquery
 
-microservice(aws lambda)
-upload to s3 bucket
 
 
 ////////NodeJs///////
