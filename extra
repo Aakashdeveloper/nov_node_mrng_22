@@ -42,10 +42,10 @@ Paytm-Payment
 Email With Node(nodemailer)
 TelegramChat
 Chatapp
-//////////////////
 GraphQl API
 NodeJs with postgres
 FIREBASE
+//////////////////
 --------NOT---------
 React/Angular
 Html/css/jquery
@@ -303,3 +303,10 @@ docker run -p 9700:1700 imagename
 /******UserInfo*****/
 (GET) => http://3.17.216.66:5000/api/auth/userinfo
 (Header) => {'x-access-token':'token value from login'}
+
+npm i -g json-server
+
+json-server --watch db.json --port 6790
+
+
+> https://github.com/Aakashdeveloper/Node-Interview-Question
